@@ -1,0 +1,23 @@
+{
+    "//comment1": "Date pour la recherche avancee de date_first a date_second",
+    "date_first": {
+      "jour_first": 1,
+      "mois_first": 1,
+      "annee_first": 2000
+    },
+
+    "date_second": {
+      "jour_second": 30,
+      "mois_second": 12,
+      "annee_second": 2000
+    },
+    
+    "//comment": "Entrez votre nom d'utilisateur et votre mot de passe",
+    "username": "",
+    "password": "",
+
+    "//comment2": "target_count = nombre d'articles a analyser par recherche, et mots_whitelist = mots a analyser",
+    "target_count": 50,
+    "nom_source" : "Humanité, L'",
+    "mots_whitelist" : ["manageur", "cadre", "leadership"]
+}
