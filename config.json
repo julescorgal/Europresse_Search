@@ -17,7 +17,12 @@
     "password": "",
 
     "//comment2": "target_count = nombre d'articles a analyser par recherche, et mots_whitelist = mots a analyser",
-    "target_count": 50,
+    "target_count": 2,
     "nom_source" : "Humanité, L'",
-    "mots_whitelist" : ["manageur", "cadre", "leadership"]
+    "mots_whitelist" : ["manageur", "cadre", "leadership"],
+    "mots_recherche" : ["manageur", "cadre", "leadership","mot"],
+    "mode_split" : true,
+    "specific_years_toggle" : true,
+    "specific_years" : ["2000", "2002", "2004","2006"]
+
 }

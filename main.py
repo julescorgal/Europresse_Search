@@ -31,6 +31,14 @@ date_second = config.get("date_second", {})
 
 target_count = config.get("target_count")
 mots_whitelist = config.get("mots_whitelist", [])
+mots_recherche = config.get("mots_recherche", [])
+
+mode_split = config.get("mode_split", False)
+
+if mode_split == False:
+    mots_recherche = mots_whitelist
+
+
 
 
 jour_first = date_first.get("jour_first") 
@@ -40,6 +48,7 @@ annee_first = date_first.get("annee_first")
 jour_second = date_second.get("jour_second") 
 mois_second = date_second.get("mois_second") 
 annee_second = date_second.get("annee_second")
+
 
 
 # Initialisation du parser d'arguments
@@ -69,7 +78,7 @@ if jour_second == 31:
     jour_second = 30
 
 separateur = ' | '
-keywords = separateur.join(mots_whitelist)
+keywords = separateur.join(mots_recherche)
 #init webcrawler
 firefox_options = Options()
 firefox_options.set_preference("accept_insecure_certs", True)
